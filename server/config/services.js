@@ -34,6 +34,7 @@
   and a webpack bundled called bundle.js, the configuration object for that service will look like:
 
   {
+   /api/
     api: /listings/:listing_id/reviews,
     url: 'http://localhost:3004',
     bundle: 'bundle.js',
@@ -42,23 +43,23 @@
 
 module.exports = {
   service1: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3001',
-    bundle: 'app.js',
+    api: '/products/:productId',
+    url: ' http://localhost:3005',
+    bundle: 'bundle.js',
   },
   service2: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3002',
-    bundle: 'app.js',
+    api: '/photos/:id',
+    url: ' http://localhost:3001',
+    bundle: 'bundle.js',
   },
   service3: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3003',
-    bundle: 'app.js',
+    api: '/ctl/:id',
+    url: ' http://localhost:3003',
+    bundle: 'bundle.js',
   },
   service4: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3004',
-    bundle: 'app.js',
-  },
+    api: '/reviews/:id',
+    url: ' http://localhost:8000',
+    bundle: 'bundle.js',
+  }
 };
